@@ -82,10 +82,9 @@ main{
   
   #planet0 {
     position: absolute;
-    width: 750px; 
-    height: 750px;
-    left: -600px;
-    top: 659x;
+    width: 900px; 
+    height: 900px;
+    left: -700px;
     border-radius: 50%;
     background-color: #FFD029;
   }
@@ -162,5 +161,51 @@ main{
     background-color: #7A91A7;  
   }
   
- 
+#planetinfo{
 
+  padding: 20rem;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
+
+#section{
+  max-width: 55rem;
+}
+
+#section h2{
+  margin-top: 10rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+
+#section h3{
+  font-family: libre baskerville;
+  font-size: 2rem;
+  color: gold;
+  font-weight: 100;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+
+}
+
+#section p{
+  color: #a3a2a2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 3rem;
+  line-height: 2.3rem;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+
+}
+
+#section h4{
+  margin-top: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+ 

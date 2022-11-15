@@ -33,7 +33,18 @@ async function getPlanets() {
       .addEventListener("click", () => {
         document.getElementById(
           "planetInfo"
-        ).innerHTML = `${planet.name} is a ${planet.type} and has a latin name of ${planet.latinName} Beskrivning av himlakroppen ${planet.desc} km: ${planet.rotation} km från solen: ${planet.distance}`;
+        ).innerHTML = `
+        <div id="planetinfo">
+        <div id ="section">
+        <h2> ${planet.name}</h2>
+        <h3>${planet.latinName}</h3>
+        <p>${planet.desc}</p> 
+        <hr>
+        <h4>OMKRETS</h4><p>km: ${planet.circumference}</p>
+        <h4>TEMPRATUR</h4><p>${planet.temp}</p>
+        </div>
+        </div> 
+        `;
       });
   });
 }
@@ -44,3 +55,4 @@ async function getPlanets() {
 
 getKey();
 getPlanets();
+
