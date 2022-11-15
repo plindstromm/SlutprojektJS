@@ -28,8 +28,7 @@ async function getPlanets() {
 
   //get more info when clicking on a planet
   Planets.map((planet) => {
-    document
-      .getElementById(`planet${planet.id}`)
+    document.getElementById(`planet${planet.id}`)
       .addEventListener("click", () => {
         document.getElementById(
           "planetInfo"
