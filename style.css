@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, rgb(5, 7, 97) , rgb(6, 1, 32));
+    background-image: linear-gradient(to right, rgb(5, 7, 97) , rgb(6, 1, 32) ,rgb(31, 0, 0));
 }
 
 main{
@@ -91,7 +91,7 @@ main{
   
   #planet1 { 
     position: absolute;
-    left: 250px;
+    left: 16rem;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -100,7 +100,7 @@ main{
   
   #planet2 {
     position: absolute;
-    left: 350px;
+    left: 22rem;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -109,7 +109,7 @@ main{
   
   #planet3 {
     position: absolute;
-    left: 470px;
+    left: 30rem;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -118,7 +118,7 @@ main{
   
   #planet4 {
     position: absolute;
-    left: 600px;
+    left: 38rem;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -127,7 +127,7 @@ main{
   
   #planet5 {
     position: absolute;
-    left: 720px;
+    left: 44.5rem;
     width: 188px;
     height: 188px;
     border-radius: 50%;
@@ -136,7 +136,7 @@ main{
   
   #planet6 {
     position: absolute;
-    left: 1000px;
+    left: 64rem;
     width: 144px;
     height: 144px;
     border-radius: 50%;
@@ -145,7 +145,7 @@ main{
   
   #planet7 {
     position: absolute;
-    left: 1250px;
+    left: 78rem;
     width: 66px;
     height: 66px;
     border-radius: 50%;
@@ -154,11 +154,24 @@ main{
   
   #planet8 {
     position: absolute;
-    left: 1400px;
+    left: 90rem;
     width: 66px;
     height: 66px;
     border-radius: 50%;
     background-color: #7A91A7;  
+  }
+
+  #planetcircle{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 218px;
+    height: 5px;
+    left: 61.4rem;
+    transform: rotate(-30deg);
+    z-index: 1;
+    border-radius: 100px / 3px;
+    
+    
   }
   
 #planetinfo{
@@ -167,11 +180,13 @@ main{
   position: relative;
   z-index: 1;
   height: 100vh;
-  width: 100%;
+  
 }
 
 #section{
-  max-width: 55rem;
+  max-width: 45rem;
+  min-width: 30rem;
+
 }
 
 #section h2{
@@ -193,9 +208,9 @@ main{
 }
 
 #section p{
+  display: flex;
   color: #a3a2a2;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 3rem;
   line-height: 2.3rem;
   margin-bottom: 4rem;
   font-size: 1.3rem;
@@ -208,4 +223,69 @@ main{
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
 }
+
+#innerinfo{
+  display: flex;
+  flex-direction: row;
+}
+
+.col1{
+  margin-right: auto;
+}
+.col2{
+  margin-left: auto;
+}
+
+#innerinfo1{
+  display: flex;
+  flex-direction: row;
+}
+
+ #randomplanet{
+  position: absolute;
+  width: 900px; 
+  height: 900px;
+  left: -700px;
+  top:30rem;
+  left: -60rem;
+  align-self: flex-end;border-radius: 50%;
+  background-color: #299faf;
+  box-shadow: 0 0 0 2.5rem rgba(66, 142, 213, 0.1), 0 0 0 5rem rgba(66, 142, 213, 0.06);
+ }
+
+ #numbers {
+  overflow:auto
+ }
+
  
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.resbtn{
+  position: absolute;
+  display: none;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 2rem;
+  border: none;
+  background-image: linear-gradient(to right, rgb(15, 18, 149) , rgb(6, 1, 32) ,rgb(98, 4, 4));
+  color: gold;
+  font-family: libre baskerville;
+}
+
+

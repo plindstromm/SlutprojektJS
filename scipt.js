@@ -34,20 +34,46 @@ async function getPlanets() {
           "planetInfo"
         ).innerHTML = `
         <div id="planetinfo">
-        <div id ="section">
-        <h2> ${planet.name}</h2>
-        <h3>${planet.latinName}</h3>
-        <p>${planet.desc}</p> 
-        <hr>
-        <h4>OMKRETS</h4><p>km: ${planet.circumference}</p>
-        <h4>TEMPRATUR</h4><p>${planet.temp}</p>
-        </div>
+         <div id ="randomplanet"></div>
+           <div id ="section">
+             <h2> ${planet.name}</h2>
+             <h3>${planet.latinName}</h3>
+             <p>${planet.desc}</p> 
+           <hr>
+          <div id="innerinfo">
+            <div class ="col1">
+             <h4>OMKRETS:</h4><p>km: ${planet.circumference}</p>
+            </div>
+              <div class ="col2">
+               <h4>KM FRÅN SOLEN:</h4><p id>km: ${planet.distance}</p>
+              </div>
+            </div>
+            <section id="innerinfo1">
+               <div class ="col1">
+                <h4>MAX TEMPRATUR:</h4><p id>${planet.temp.day} C</p>
+              </div>
+              <div class ="col2">
+                <h4>MIN TEMPRATUR:</h4><p>${planet.temp.night} C</p>
+              </div>
+            </section>
+           <hr>
+           <h4>MÅNAR:</h4><p id ="numbers">${planet.moons} </p>
+         </div>
         </div> 
         `;
+        document.getElementById('planet0').style.display = 'none';
+        document.getElementById('planetcircle').style.display = 'none';
+        document.querySelector('.resbtn').style.display = 'block';
+        
+        
       });
   });
 }
 
+
+function reset(){
+  history.go(0)
+}
 
 
 
